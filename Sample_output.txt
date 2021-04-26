@@ -1,0 +1,29 @@
+CS558 : COMPUTER SYSTEM LAB ASSIGNMENT - 05
+Instructor : Dr. Manas Khatua and Dr. Moumita Patra
+TA's : Alakesh Kalita, Arunav Saikia, Meenu Rani Dey, Priya Undriwade, Vinay Kumar Gupta
+Sumbittted By : Himanshu Patel(204101029), Ketan Karnakota(204101030)
+-----------------------------------------------------------------------------------------
+
+****************** FIFO ******************
+Page Ref  | 2  3  2  4  1  2  3  5  4  2  
+----------------------------------------
+Frame - 1 | 2  2  2  2  1  1  1  5  5  5  
+Frame - 2 | E  3  3  3  3  2  2  2  4  4  
+Frame - 3 | E  E  E  4  4  4  3  3  3  2  
+Hits : 1 , Faults : 9
+
+****************** LRU ******************
+Page Ref  | 2  3  2  4  1  2  3  5  4  2  
+----------------------------------------
+Frame - 1 | 2  2  2  2  2  2  2  2  4  4  
+Frame - 2 | E  3  3  3  1  1  1  5  5  5  
+Frame - 3 | E  E  E  4  4  4  3  3  3  2  
+Hits : 2 , Faults : 8
+
+****************** LFU ******************
+Page Ref  | 2  3  2  4  1  2  3  5  4  2  
+----------------------------------------
+Frame - 1 | 2  2  2  2  2  2  2  2  2  2  
+Frame - 2 | E  3  3  3  1  1  1  5  5  5  
+Frame - 3 | E  E  E  4  4  4  3  3  4  4  
+Hits : 3 , Faults : 7
